@@ -5,6 +5,7 @@ class Index extends Controller
 {
     public function index()
     {
+        \think\Config::parse(APP_PATH.'../config/newconf/conf.ini','ini');
         dump(\think\Config::get());
         // return 'phps';
     }
