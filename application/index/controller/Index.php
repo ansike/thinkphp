@@ -6,19 +6,22 @@ class Index extends Controller
 {
     public function index()
     {
-        //读取其他位置的配置文件
-        // \think\Config::parse(APP_PATH.'../config/newconf/conf.ini','ini');
-        $conf = 'twice.params';
-        $isExist = Config::has($conf);
-        if($isExist){
-            dump(Config::get($conf));
-        }else{
-            return $conf.'配置项不存在';
-        }
-        // dump(Config::get('twice.param'));
-        // dump(\think\Config::has('twice.param'));
-        // dump(config('?app_status'));
-        // return 'phps';
+        //类方法
+        // Config::set('site_common','hello');
+        // $confs = [
+        //     'site_common' => 'php中文网',
+        //     'site_name' => 'www.php.cn'
+        // ];
+        // Config::set('twice',$confs);
+
+        //助手函数
+        // config('site_common','hello');
+        // $confs = [
+        //     'site_common' => 'php中文网',
+        //     'site_name' => 'www.php.cn'
+        // ];
+        // config('twice',$confs);
+        dump(Config::get());
     }
 
     public function hello()
