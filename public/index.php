@@ -14,7 +14,7 @@
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/../application/');
 //定义配置目录
-define('CONF_PATH', __DIR__ . '/../config/');
+// define('CONF_PATH', __DIR__ . '/../config/');
 // define('CONF_EXT', '.ini');
 // define('CONF_EXT', '.xml');
 // define('CONF_EXT', '.json');
